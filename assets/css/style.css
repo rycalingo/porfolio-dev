@@ -44,8 +44,12 @@ label, textarea, textarea {
   display: table;
   clear: both;
 }
+html { height: 100%; }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 	background: url('../img/hypnotize.png') repeat;
 }
 
@@ -113,6 +117,7 @@ nav li:focuse a {  }
 nav li:hover { background:  #4aaaa5; }
 
 .stage {
+  flex: 1 0 auto;
 	padding-top: 20px;
 	padding-bottom: 40px;
 }
@@ -224,17 +229,16 @@ button {
     border: none;
 }
 footer {
+  	flex-shrink: 0;
 	width: 100%;
 	height: 68px;
 	padding: 2% 0;
 	background: #666666;
-	position: fixed;
-	bottom: 0;
 	border-top: 5px solid #4aaaa5;
 }
 footer p {
 	color: #ffffff;
-	font-size: 0.76em;
+	font-size: 0.75em;
 	text-align: center;
 }
 
@@ -298,7 +302,7 @@ footer p {
 /* ------ max-width: 768px ------ */
 @media screen and (max-width: 768px) {
 
-  header { height: inherit; }
+  header { height: auto; }
 
   .wrapper { 
   	width: auto;
@@ -328,7 +332,16 @@ footer p {
 
   #connect .icon { width: auto; }
 
-
+}
 /* ------ max-width: 980px */
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 980px) {
 
+.box {
+	width: auto;
+	height: auto;
+	float: none;
+	margin-bottom: 40px;
+}
+.box:nth-child(odd) {
+    margin-right: 0;
+}
