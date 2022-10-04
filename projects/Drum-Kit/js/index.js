@@ -20,7 +20,7 @@ function makeSound(key) {
 
         const fileName = getComputedStyle(drum).backgroundImage.split("/").pop().split(".").shift();
         
-        const audioSrc = "sounds/"+fileName+".mp3";
+        const audioSrc = "./sounds/"+fileName+".mp3";
 
         const sound = new Audio(audioSrc);
         sound.play();
