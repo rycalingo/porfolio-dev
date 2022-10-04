@@ -1,0 +1,89 @@
+* { box-sizing: border-box; }
+
+body { background: url("../img/western-backdrop.jpg") 0 0 / 100% repeat; }
+
+
+/* font-family: 'Ewert', cursive; */
+/* font-family: 'Bungee', cursive; */
+/* font-family: 'BioRhyme', serif; */
+
+h1 {
+	font-family: 'Ewert', cursive;
+	font-weight: normal;
+	font-size: 50px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+h2, h3, h4, h5, p {
+	color: #292100;
+	font-family: 'Bungee', sans-serif;
+}
+
+h2 { margin-bottom: 10px; }
+
+h5 { margin-top: 10px; }
+
+p { 
+	font-size: 20px;
+	margin: 5px 0 0;
+}
+#game { 
+	background: url("../img/old_paper.jpg") 0 0 / 100% auto repeat;
+	position: relative;
+	margin: 30px auto 0;
+	padding: 10px;
+	width: 530px;
+	text-align: center;
+}
+#letterBoard {
+	font-family: 'BioRhyme', serif;
+	width: inherit;
+	font-size: 2.5em; /* 40px */
+	letter-spacing: 20px; /* 5px */
+	margin-top: 20px;
+}
+#lettersUsed { 
+	margin-top: 10px;
+	font-family: 'BioRhyme', serif; }
+
+.row {
+	width: 400px;
+	margin: 10px auto 10px;
+	padding: 10px 10px;
+}
+.row:last-child {
+	height: 100px;
+	margin: 0 auto;
+	/*border-bottom: 10px dotted #322709;*/
+}
+#wins, #numWins, #numGuess {
+	font-family: "BioRhyme", cursive;
+	margin: 20px 0;
+	font-size: 26px;
+}
+
+.last {
+	position: absolute;
+	width: inherit;
+	bottom: 10px;
+}
+#gameOverMsg {
+	margin: 0 20px;
+	opacity: 0;
+	transition: opcacity .5s ease;
+ }
+#gameOverMsg.show { opacity: 1; }
+
+.stars, .inline { 
+	zoom: 1.2;
+	vertical-align: middle;
+	display: inline-block;
+}
+.inline { 
+	min-width: 100px;
+}
+ .stars {
+ 	text-align: center;
+ 	font-weight: bolder;
+ 	font-size: 1.5em;
+ }

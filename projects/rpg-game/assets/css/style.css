@@ -1,0 +1,114 @@
+* { box-sizing: border-box; }
+
+h1 { 
+	font-size: 1.8em;
+	font-weight: 900;
+}
+h2 {
+	font-size: 1.6em;
+	font-weight: 800;
+}
+h3 {
+	font-size: 1.4em;
+	font-weight: 700;
+}
+h4 {
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+h1, h2, h3, h4 { font-family: 'Georgia', Times, Times New Roman, serif; }
+
+p, span, ol, li, a { 
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; color: #000000;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+p, span, ul, ol, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 1.3em;
+}
+
+a { 
+	font-size: 1em;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+label, textarea, textarea { 
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; color: #000000;
+	font-size: 1em;
+}	
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body { background: url('../../assets/img/throne_room.jpg') no-repeat; }
+
+#game_rpg {
+	width: 750px;
+	height: 710px;
+	padding: 10px 10px;
+	margin: 20px auto;
+	/*border: 1px solid #000000;*/
+	background-color: rgba(255,255,255, 0.4);
+}
+.game_title { text-align: center; }
+/*#hud {
+	height: 40px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #000000;
+}*/
+section {
+	padding: 10px 0 5px;
+	margin: 0 auto 10px;
+}
+#attack_btn, #restart_btn {
+	width: 100px;
+	padding: 10px 20px;
+	margin: 20px 0;
+	background: #bfbfbf;
+	display: inline;
+	cursor: pointer;
+}
+#attack_btn, #restart_btn {
+	font-size: 11px;
+	text-align: center;
+}
+*.HIDE {
+	display: none !important;
+}
+#champions, #fighters, #challenger {
+	display: inline-flex;
+}
+.character {
+	padding: 3px 12px;
+	text-align: center;
+	border: 1px solid #343434;
+	cursor: pointer;
+}
+.character .name { font-size: 12px; }
+
+.character .frame {
+	width: 150px;
+	height: 100px;
+	margin: 3px;
+	overflow: hidden;
+}
+.character .frame img {
+	width: 80%;
+}
+.champion {
+	background: #1742ff;
+}
+.fighter {
+	background: #fd7b15;
+}
+.challenger {
+	background: #fc0a07;
+}

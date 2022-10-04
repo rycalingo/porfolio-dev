@@ -8,38 +8,41 @@
 
 		<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
 	</head>
-	
 	<body>
 		<header>
 		  <div class="wrapper clearfix">
 
 			<div class="name_title">
-				<h1>RYAN CALINGO</h1>
+				<a id="home-link" href="/index.html"><h1>GABRIEL RYAN CALINGO</h1></a>
+				<!-- <h1>GABRIEL RYAN CALINGO</h1> -->
 			</div><!-- name title -->
 
 			<nav id="main_nav">
 			  <ul>
-				<li><a href="./index.html" id="nav_about" class="nav_link" title="about">About</a></li>
-				<li><a href="./portfolio.html" id="nav_portfolio" class="nav_link" title="portfolio">Portfolio</a></li>
-				<li><a href="./contact.html" id="nav_contact" class="nav_link" title="contact">Contact</a></li>
+				<li><a href="#about" id="nav_about" class="nav_link" title="about">About</a></li>
+				<li><a href="#portfolio" id="nav_portfolio" class="nav_link" title="portfolio">Portfolio</a></li>
+				<li><a href="#contact" id="nav_contact" class="nav_link" title="contact">Contact</a></li>
 			  </ul>
 			</nav>  <!-- main nav -->
 
 		  </div>  <!-- header wrapper -->
 		</header>
 
-		<section class="stage">
+		<section id="about" class="stage">
 		  <div class="wrapper">
 			<div class="main_content clearfix">
 				<h2 class="title">About Me</h2>  <!-- ABOUT ME -->
-				<img src="./assets/img/profile_pic.jpg" id="profile_pic" alt="profile picture">
-				<p>I'm a Front-End Developer who enjoys building modern, innovative, dynamic, and user friendly websites. My goal is to provide users a great experience by taking something that is complex and make into something that is simple, clean, easy to use and engaging.</p>
-				<p>I have good logical skills, a keen attention to detail, an eagerness to explore new ideas, I see challenges as a tool to hepl me grow and improve my skills as a developer.<br>The great thing about being a developer is that it is always changing so you are alway being challenge to think differently which makes it more interesting, there is always something new to learn.</p>
+				<div class="img-frame"><img src="./assets/img/profile_pic.jpg" id="profile_pic" alt="profile picture"></div>
+				<p class="first"> I am a Front-End developer adept at implementing the full use of  html, css, and javascript along with React, and nodeJS. In my previous position I was the lead developer in most of the projects I’ve worked on, working alongside with other designers, and project managers in delivering the client’s expectations. Over the years I’ve learned to improve my attention to details and be more adaptive to varying situations.</p>
+				<p>I really enjoy the whole process of developing a website/web app, starting from the conceptualization of an idea, figuring out solutions for the functionality of different features and designing the user experience for utility and efficiency. The ability of being able to manifest an idea into existence is something I truly enjoy and to be able to work in it professionally makes it even better.</p>
+				<p>Given the opportunity, I will be a desirable addition to the company and I will make it my priority to contribute all of my skills and experiences I have gained over the years in helping to maintain a successful and productive business.</p>
 			</div>  <!-- ABOUT ME -->
 
-
-			<aside id="connect">
+			<!-- <aside id="connect">
 				<h4 class="title">Connect</h4>
 				<div class="icon_holder">
 					<a href="" title="gitHub"><img src="./assets/img/if_github_circle_black_107161.svg" alt="gitHub Icon" class="icon"></a>
@@ -47,14 +50,88 @@
 					<a href="" title="Stackoverflow"><img src="./assets/img/if_stackoverflow_rounded_394191.svg" alt="Stackoverflow Icon" class="icon"></a>
 				</div>
 
-			</aside>  <!-- connect -->
+			</aside> -->   <!-- connect -->
+		  
+		  </div>  <!-- main stage wrapper -->
+		</section>  <!-- main stage -->
+
+		<section id="portfolio" class="stage">
+		  <div class="wrapper">
+			<div class="main_content clearfix">  <!-- PORTFOLIO -->
+				<h2 class="title">Portfolio</h2>
+				<div class="holder">
+					<div class="box" data-link="projects/TinDog/">
+						<img src="./assets/img/tindog.png">
+						<span><h4 class="box_title">TinDog</h4>
+					</div>
+					<div class="box" data-link="projects/SimonGame">
+						<img src="./assets/img/simongame.png">
+						<span><h4 class="box_title">Simon</h4></span>
+					</div>
+					<div class="box" data-link="projects/Drum-kit">
+						<img src="./assets/img/drumkit.png">
+						<span><h4 class="box_title">Drum Kit</h4></span>
+					</div>
+					<div class="box" data-link="projects/TriviaGame">
+						<img src="./assets/img/marveltrivia.png">
+						<span><h4 class="box_title">Marvel Trivia</h4></span>
+					</div>
+					<div class="box" data-link="projects/Hangman-Game">
+						<img src="./assets/img/hangman.png">
+						<span><h4 class="box_title">Wanted</h4></span>
+					</div>
+					<div class="box" data-link="projects/rpg-game">
+						<img src="./assets/img/rpg-gameofthrones.png">
+						<span><h4 class="box_title">RPG GameOfThrones</h4>
+					</div>
+				</div>
+			</div>  <!-- PORTFOLIO -->
+
+			<!-- <aside id="connect">
+				<h4 class="title">Connect</h4>
+				<div class="icon_holder">
+					<a href="" title="gitHub"><img src="./assets/img/if_github_circle_black_107161.svg" alt="gitHub Icon" class="icon"></a>
+					<a href="" title="linkedIn"><img src="./assets/img/if_51-linkedin_104452.svg" alt="LinkedIn Icon" class="icon"></a>
+					<a href="" title="Stackoverflow"><img src="./assets/img/if_stackoverflow_rounded_394191.svg" alt="Stackoverflow Icon" class="icon"></a>
+				</div>
+
+			</aside> -->   <!-- connect -->
+		  
+		  </div>  <!-- main stage wrapper -->
+		</section>  <!-- main stage -->
+
+		<section id="contact" class="stage">
+		  <div class="wrapper">
+			<div class="main_content">  <!-- CONTACT -->
+				<h2 class="title">Contact</h2>
+				<form>
+					<label>Name</label>
+					<input type="text" name="name" placeholder="your name">
+					<label>Email</label>
+					<input type="email" name="email" placeholder="your email">
+					<label>Message</label>
+					<textarea  id="message" placeholder="your message"></textarea>
+					<input id="submit_btn" type="submit" value="Submit" />
+				</form>
+			</div>  <!-- CONTACT -->
+
+			<!-- <aside id="connect">
+				<h4 class="title">Connect</h4>
+				<div class="icon_holder">
+					<a href="" title="gitHub"><img src="./assets/img/if_github_circle_black_107161.svg" alt="gitHub Icon" class="icon"></a>
+					<a href="" title="linkedIn"><img src="./assets/img/if_51-linkedin_104452.svg" alt="LinkedIn Icon" class="icon"></a>
+					<a href="" title="Stackoverflow"><img src="./assets/img/if_stackoverflow_rounded_394191.svg" alt="Stackoverflow Icon" class="icon"></a>
+				</div>
+
+			</aside> -->   <!-- connect -->
 		  
 		  </div>  <!-- main stage wrapper -->
 		</section>  <!-- main stage -->
 
 		<footer>
-			<p>Copyright &copy; 2017 Ryan Calingo</p>
+			<p>&copy; <span class="year"></span> GABRIEL RYAN CALINGO</p>
 		</footer>
 
+		<script type="module" src="./assets/js/main.js"></script>
 	</body>
 </html>

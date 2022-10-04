@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>Hangman Game</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Bungee|Ewert|BioRhyme" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div id="game">
+  	
+  	<h1>HANGMAN GAME</h1>
+	<span class="stars one">☆&nbsp;&nbsp;☆&nbsp;&nbsp;☆</span><div class="inline"><h2 id="gameOverMsg">Game Over</h2></div><span class="stars one">☆&nbsp;&nbsp;☆&nbsp;&nbsp;☆</span>
+	<h2 id="anyKeyMsg">Press Any Key<br>to Get Started!</h2>
+
+
+	<div class="row row-1">
+		<h3 id="wins">WINS: <span id="numWins">0</span></h3>
+		
+		<h3>Current Word</h3>
+	  	<p id="letterBoard">&nbsp;</p>
+	</div>
+	<div class="row row-2">
+		<h3>Number of Guesses<br>Remaining</h3>
+		<span class="stars">☆</span><div class="inline"><h3 id="numGuess">0</h3></div><span class="stars">☆</span>
+	</div>
+	<div class="row row-3">
+  	  <p id="lettersUsed">&nbsp;</p>
+  	  <h5 class="last">Already Used Letters</h5>
+	</div>
+
+  </div>
+  	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<script type"text/javascript" src="./assets/js/game.js"></script>
+</body>
+
+</html>
