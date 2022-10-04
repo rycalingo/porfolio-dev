@@ -280,9 +280,14 @@ footer p {
 /* ****** MEDIA QUERY ******  */
 
 /* ------ max-width: 640px ------ */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 701px) {
   
   header { height: inherit; }
+
+	.name_title h1 > span {
+		width: 100%;
+		display: block;
+	}
 
   .wrapper { width: 100%; }
 
@@ -324,29 +329,18 @@ footer p {
 
 /* ------ Portfolio ------ */
   .box {
-  	width: auto;
-  	float: none;
-  	margin-right: 0;
-  }
-
-  .box:nth-child(odd) {
-    margin-right: 0;
-  }
-}
-
-
-/* ------ max-width: 700px ------ */
-@media screen and (max-width: 700px) {
-
-	.box {
 		width: 100%;
-	}
+  }
 
 	.stage::before {
 		content: "";
 		display: block;
-		height: 120px;
+		height: 160px;
 	}
+
+  .box:nth-child(odd) {
+    margin-right: 0;
+  }
 }
 
 /* ------ max-width: 768px ------ */
