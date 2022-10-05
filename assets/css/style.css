@@ -111,7 +111,7 @@ nav ul li {
 	float: left;
 }
 nav a {
-	padding: 25px 14px;
+	padding: 25px 12px;
 	vertical-align: middle;
 	font-weight: 600;
 }
@@ -156,7 +156,7 @@ aside .title {
 	margin-right: 3.645833%; /* 35px */
 	margin-bottom: 40px;
 	background: #ffffff;
-	border: 1px solid #dddddd;
+	/* border: 1px solid #dddddd; */
 	margin: 0 auto;
 	display: block;
 }
@@ -230,6 +230,7 @@ aside#connect {
 label, input, textarea {
 	font-size: 1em;
 	display: block;
+	border: none;
 }
 label {
 	margin: 15px 0 5px;
@@ -242,23 +243,38 @@ input {
 	padding: 3px  5px;
 }
 ::-webkit-input-placeholder {
-  color: #CACDD0;
+  color: #8e8e8e;
 }
 textarea { 
 	width: 100%;
 	min-height: 200px;
-	border-color: #333333;
+
 	padding: 3px 5px;
+	resize: none;
+	margin: 0;
+}
+.text-field {
+	background-color: #efefef;
+	border-radius: 6px;
+	padding: 10px 10px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+.text-field:focus {
+	background-color: #ffffff;
+	outline: none;
+	border: 2px solid #bfbfbf;
+	box-shadow: #e8e8e8 0px 4px 10px 4px;
 }
 button {
 	box-shadow: none;
 	border-radius: 0;
 }
 #submit_btn {
-	margin: 10px auto 0;
+	margin: 0 auto;
 	font-size: 1em;
 	padding: 0 20px;
-	width: 300px;
+	width: 240px;
 	height: 58px;
     background: #4aaaa5;
     color: #ffffff;
@@ -266,6 +282,11 @@ button {
 		display: block;
 		cursor: pointer;
 }
+
+#submit_btn:hover {
+	box-shadow: #c2c2c2 0px 4px 10px 4px;
+}
+
 footer {
   	flex-shrink: 0;
 	width: 100%;
