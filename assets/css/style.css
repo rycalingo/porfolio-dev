@@ -90,7 +90,8 @@ header {
 }
 nav#main_nav {
 	height: inherit;
-	width: 28.125%; /* 270px */
+	width: 34%; /* 270px */
+	/* width: 20vw; */
 	height: 70px;
 	padding: 0 ;
 	vertical-align: bottom;
@@ -98,6 +99,7 @@ nav#main_nav {
 }
 
 nav ul {
+	height: inherit;
 	margin: 0;
 	text-align: center;
 }
@@ -109,11 +111,11 @@ nav ul li {
 	float: left;
 }
 nav a {
-	padding: 25px 20%; /* 18px */
+	padding: 25px 14px;
 	vertical-align: middle;
 	font-weight: 600;
 }
-nav li:nth-child(n+2):before {
+nav li:nth-child(n+2) a:before {
 	content: "|";
 	color: #C7CACD;
 	position: absolute;
