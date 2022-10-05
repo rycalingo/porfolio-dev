@@ -111,6 +111,7 @@ nav ul li {
 nav a {
 	padding: 25px 20%; /* 18px */
 	vertical-align: middle;
+	font-weight: 600;
 }
 nav li:nth-child(n+2):before {
 	content: "|";
@@ -128,7 +129,7 @@ nav li:hover { background:  #4aaaa5; }
 
 .stage {
   flex: 1 0 auto;
-	padding-top: 20px;
+	padding-top: 40px;
 	padding-bottom: 40px;
 }
 .stage:nth-child(even) {
@@ -149,7 +150,7 @@ aside .title {
 	border-bottom: 1px solid #C7CACD;
 }
 .main_content {
-	max-width: 950px; /* 650px  context */
+	width: 100%;
 	margin-right: 3.645833%; /* 35px */
 	margin-bottom: 40px;
 	background: #ffffff;
@@ -282,6 +283,11 @@ footer p {
 /* ------ max-width: 640px ------ */
 @media screen and (max-width: 701px) {
   
+	nav a {
+		padding: 1rem 20%;
+		vertical-align: middle;
+	}
+
   header { height: inherit; }
 
 	.name_title h1 > span {
@@ -335,7 +341,7 @@ footer p {
 	.stage::before {
 		content: "";
 		display: block;
-		height: 160px;
+		height: 140px;
 	}
 
   .box:nth-child(odd) {
@@ -354,7 +360,7 @@ footer p {
   }
 
   nav#main_nav {
-  	height: 70px;
+  	height: 55px;
   	min-width: 270px;
   }
 
